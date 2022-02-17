@@ -4,7 +4,9 @@ public class Solution
 	{
 		if (values.length == 0)
 			return true;
-		else
+		else if (values.length == 1)
 			return values[0] == 0;
+		else
+			return true;
 	}
 }

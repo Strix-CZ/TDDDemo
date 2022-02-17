@@ -14,6 +14,6 @@ public class FairArrayTest
 	@Test
 	void singleElementArrayIsNotFair()
 	{
-		Assertions.assertFalse(solution.isFair(new int[] { }));
+		Assertions.assertFalse(solution.isFair(new int[] { 1 }));
 	}
 }

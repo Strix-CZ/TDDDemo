@@ -26,6 +26,12 @@ public class FairArrayTest
 		assertTrue(isFair(0));
 	}
 
+	@Test
+	void twoElementsIsFairWhenEqual()
+	{
+		assertTrue(isFair(10, 10));
+	}
+
 	private boolean isFair(int... values)
 	{
 		return solution.isFair(values);

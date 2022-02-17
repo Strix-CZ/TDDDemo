@@ -37,6 +37,12 @@ public class FairArrayTest
 		assertFalse((isFair(10, 11)));
 	}
 
+	@Test
+	void threeElementsAreFairWhenTheOddSumIsEqualEvenSum()
+	{
+		assertTrue(isFair(4, 10, 6));
+	}
+
 	private boolean isFair(int... values)
 	{
 		return solution.isFair(values);

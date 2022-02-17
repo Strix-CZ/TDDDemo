@@ -1,6 +1,9 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class FairArrayTest
 {
 	private final Solution solution = new Solution();
@@ -8,19 +11,19 @@ public class FairArrayTest
 	@Test
 	void emptyArrayIsFair()
 	{
-		Assertions.assertTrue(isFair());
+		assertTrue(isFair());
 	}
 
 	@Test
 	void singleElementArrayIsNotFair()
 	{
-		Assertions.assertFalse(isFair(1));
+		assertFalse(isFair(1));
 	}
 
 	@Test
 	void singleZeroIsFair()
 	{
-		Assertions.assertTrue(isFair(0));
+		assertTrue(isFair(0));
 	}
 
 	private boolean isFair(int... values)

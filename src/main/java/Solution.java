@@ -1,6 +1,6 @@
 public class Solution
 {
-	public static boolean isFair(int[] values)
+	public boolean isFair(int[] values)
 	{
 		return true;
 	}

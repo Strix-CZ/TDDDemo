@@ -1,6 +1,6 @@
 public class Solution
 {
-	public static void isFair(int[] ints)
+	public static void isFair(int[] values)
 	{
 	}
 }

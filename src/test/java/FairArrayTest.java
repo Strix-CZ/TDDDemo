@@ -8,12 +8,17 @@ public class FairArrayTest
 	@Test
 	void emptyArrayIsFair()
 	{
-		Assertions.assertTrue(solution.isFair(new int[]{ }));
+		Assertions.assertTrue(isFair());
 	}
 
 	@Test
 	void singleElementArrayIsNotFair()
 	{
-		Assertions.assertFalse(solution.isFair(new int[] { 1 }));
+		Assertions.assertFalse(isFair(1));
+	}
+
+	private boolean isFair(int... values)
+	{
+		return solution.isFair(values);
 	}
 }

@@ -43,6 +43,13 @@ public class FairArrayTest
 		assertTrue(isFair(4, 10, 6));
 	}
 
+	@Test
+	void complexTest()
+	{
+		assertFalse(isFair(0, 0, 0, 0, 0, 1));
+		assertTrue(isFair(4, -10, 6, 20));
+	}
+
 	private boolean isFair(int... values)
 	{
 		return solution.isFair(values);

@@ -10,4 +10,10 @@ public class FairArrayTest
 	{
 		Assertions.assertTrue(solution.isFair(new int[]{ }));
 	}
+
+	@Test
+	void singleElementArrayIsNotFair()
+	{
+		Assertions.assertFalse(solution.isFair(new int[] { }));
+	}
 }

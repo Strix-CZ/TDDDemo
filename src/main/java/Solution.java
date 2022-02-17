@@ -7,6 +7,6 @@ public class Solution
 		else if (values.length == 1)
 			return values[0] == 0;
 		else
-			return true;
+			return values[0] == values[1];
 	}
 }

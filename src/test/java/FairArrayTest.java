@@ -17,6 +17,12 @@ public class FairArrayTest
 		Assertions.assertFalse(isFair(1));
 	}
 
+	@Test
+	void singleZeroIsFair()
+	{
+		Assertions.assertTrue(isFair(0));
+	}
+
 	private boolean isFair(int... values)
 	{
 		return solution.isFair(values);
